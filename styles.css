@@ -1,19 +1,22 @@
 body {
-    background-image: url('background1.jpg');
+    background-image: url('back1.png');
     background-size: cover;
     background-position: center;
-    transition: background 0.5s ease;
-    font-family: 'Comic Sans MS', cursive, sans-serif;
+    transition: background 0.3s ease;
+    font-family: 'Brush Script MT', cursive;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
+    padding-top: 130px;
     height: 100vh;
     margin: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 .header{
     margin: 0 auto;
-    display: grid;
+    display: inline-block;
     padding: 10px;
     border: 5px dotted blue;
 }
@@ -25,7 +28,7 @@ body {
     border: 5px dotted purple;
 }
 .button {
-    background: pink;
+    background: #f58ca8;
     border: none;
     padding: 20px;
     font-size: 20px;
@@ -43,17 +46,16 @@ body {
     top: 15px;
     padding: 10px;
     text-align: right;
-    border: 3px dotted black;
+    border: 3px solid black;
+    border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     width: 95%;
-    height: 10%;
+    gap: 10px;
+    background-color: #bc808f;
 }
 .toggle-btn {
-    position: absolute;
-    top: 10px;
-    background: url(changeBG.png);
     padding: 2px;
     border: 3px solid black;
     border-radius: 20px;
@@ -63,4 +65,27 @@ body {
 .toggle-btn:hover {
     transform: scale(1.1);
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+    width: 100%;
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    position: absolute;
+    bottom: 0px;
+    height : 40px;
+    margin-top : 40px;
+}
+
+footer a{
+    color: #EEE;
+    text-decoration: underline;
+    transition: color 0.2s ease;
+}
+
+footer a:hover{
+    color: #EE66FF;
 }
