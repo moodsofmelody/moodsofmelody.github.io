@@ -1,6 +1,6 @@
 let bgToggle = false;
 function toggleBackground() {
-    document.body.style.backgroundImage = bgToggle ? "url('background1.jpg')" : "url('background2.jpg')";
+    document.body.style.backgroundImage = bgToggle ? "url('back1.png')" : "url('back2.jpg')";
     bgToggle = !bgToggle;
 }
 
@@ -12,3 +12,7 @@ document.querySelectorAll('.button, .toggle-btn').forEach(button => {
         button.style.transform = 'scale(1)';
     });
 });
+
+function toggleQuestion() {
+    
+}
