@@ -1,8 +1,15 @@
-let bgToggle = false;
-function toggleBackground() {
-    document.body.style.backgroundImage = bgToggle ? "url('back1.png')" : "url('back2.jpg')";
-    bgToggle = !bgToggle;
-}
+const images = [
+    'back1.jpg', 
+    'back2.jpg', 
+    'color1.png'
+];
+
+let currentIndex = 0;
+
+document.getElementById('bg-button').addEventListener('click', function() {
+    currentIndex = (currentIndex + 1) % images.length;
+    document.body.style.backgroundImage = `url(${images[currentIndex]})`;
+});
 
 document.querySelectorAll('.button, .toggle-btn').forEach(button => {
     button.addEventListener('mouseover', () => {
@@ -12,6 +19,16 @@ document.querySelectorAll('.button, .toggle-btn').forEach(button => {
         button.style.transform = 'scale(1)';
     });
 });
+
+document.getElementById("openPopup").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "flex";
+});
+
+document.getElementById("closePopup").addEventListener("click", function() {
+    document.getElementById("popup").style.display = "none";
+});
+
+
 
 function toggleQuestion() {
     
