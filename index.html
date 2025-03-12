@@ -11,8 +11,16 @@
 </head>
 <body>
     <div class="topBar">
-        <button class="toggle-btn" onclick="toggleBackground()"><img src="changeBG.png" alt="change background" width="50" height="50"></button>
+        <button id="openPopup" class="toggle-btn"><img src="mail.png" alt="change background" width="50" height="50"></button>
+        <button id="bg-button" class="toggle-btn" onclick="toggleBackground()"><img src="changeBG.png" alt="change background" width="50" height="50"></button>
         <button class="toggle-btn" onclick="toggleQuestion()"><img src="question.png" alt="question" width="50" height="50"></button>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <span id="closePopup" class="close-btn">&times;</span>
+            <p>happy birthday melody!! eeeeeeeeeeeeeeee</p>
+        </div>
     </div>
 
     <div class="header">
@@ -20,50 +28,32 @@
     </div>
 
     <div class="container">
-        <button class="button"> <a href="#horny"> horny (MAKE SURE TO SHARE THE DOC!)</a> </button>
-        <button class="button"> <a href="#angry"> crashing out </a> </button>
-        <button class="button"> <a href="#hungry"> hungry </a> </button>
-        <button class="button"> <a href="#happy"> happy </a> </button>
-        <button class="button"> <a href="#down-bad"> sad </a> </button>
-        <button class="button"> <a href="#angry"> angry </a> </button>
-        <button class="button"> <a href="#meaning"> what is life for </a> </button>
-        <button class="button"> <a href="#tired"> i'm tired </a> </button>
-        <button class="button"> <a href="#grind"> on the grind </a> </button>
-        <button class="button"> <a href="#want"> i want [insert thing here] </a> </button>
+        <button class="button"><a href="#validation">need validation 🥺</a></button>
+        <button class="button"><a href="#happy">happy</a></button>
+        <button class="button"><a href="#sad">sad</a></button>
+        <button class="button"><a href="#stressed">stressed</a></button>
+        <button class="button"><a href="#tired">tired</a></button>
+        <button class="button"><a href="#question">???</a></button>
     </div>
 
-    <div id="horny" class="mood">
-        <h2>horny?</h2>
+    <div id="validation" class="mood">
+        <h2>need validation? 🥺🥺</h2>
         <p>for your eyes only!! 🙈🙈</p>
     </div>
     
-    <div id="crash-out" class="mood">
-        <h2>crashing out?</h2>
-        <p>Everything feels like it’s falling apart. Maybe take a break, get some rest, and come back stronger.</p>
-    </div>
-    
-    <div id="hungry" class="mood">
-        <h2>hungry?</h2>
-        <p>Go grab a snack or cook something nice. You deserve it. 🍕🍔</p>
-    </div>
-    
     <div id="happy" class="mood">
-        <h2>happy!</h2>
-        <p>Enjoy the moment. Ride the wave. Share your happiness with someone!</p>
+        <h2>happy?</h2>
+        <p>YAY!!! YAY!!! YAY!!!</p>
+        <p>some things to help u <i>~ride the stride~</i> are:</p>
     </div>
     
     <div id="sad" class="mood">
         <h2>sad?</h2>
         <p>It’s okay, we’ve all been there. Maybe drink some water, go for a walk, or hit the gym.</p>
     </div>
-    
-    <div id="angry" class="mood">
-        <h2>angry?</h2>
-        <p>Deep breaths. Chill. Punch a pillow if you have to. But don’t let anger control you.</p>
-    </div>
-    
-    <div id="meaning" class="mood">
-        <h2>What is Life For?</h2>
+
+    <div id="stressed" class="mood">
+        <h2>stressed?</h2>
         <p>Big question. No easy answer. But maybe start by enjoying the little things.</p>
     </div>
     
@@ -71,16 +61,12 @@
         <h2>tired?</h2>
         <p>Rest up, king/queen. Sleep is fuel. Don’t forget to recharge.</p>
     </div>
-    
-    <div id="grind" class="mood">
-        <h2>on the grind?</h2>
-        <p>Keep pushing, but don’t forget to rest. The grind never stops, but neither should your self-care.</p>
+
+    <div id="question" class="mood">
+        <h2>???</h2>
+        <p>Rest up, king/queen. Sleep is fuel. Don’t forget to recharge.</p>
     </div>
-    
-    <div id="want" class="mood">
-        <h2>needy?</h2>
-        <p>Manifest it. Work for it. Or maybe realize you didn’t need it that bad.</p>
-    </div>
+
 
     <footer>
         <p>questions? concerns? is an extremely specific and indescribable feeling not listed here? please refer to <a href="https://forms.gle/LidMy3tCaF9rhjyG8">this link</a> to state your message. thanks!</p>
