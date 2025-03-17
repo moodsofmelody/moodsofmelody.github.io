@@ -11,15 +11,19 @@
 </head>
 <body>
     <div class="topBar">
+        <p style="color: #5e3323"><b>click me to read!! ---></b></p>
         <button id="openPopup" class="toggle-btn"><img src="mail.png" alt="change background" width="50" height="50"></button>
         <button id="bg-button" class="toggle-btn" onclick="toggleBackground()"><img src="changeBG.png" alt="change background" width="50" height="50"></button>
-        <button class="toggle-btn" onclick="toggleQuestion()"><img src="question.png" alt="question" width="50" height="50"></button>
     </div>
+
+    <div class="side Left"></div>
+    <div class="side Right"></div>
 
     <div id="popup" class="popup">
         <div class="popup-content">
             <span id="closePopup" class="close-btn">&times;</span>
-            <p>happy birthday melody!! eeeeeeeeeeeeeeee</p>
+            <p>dear melody,</p>
+            <p>happy birthday! 18 years is a long time, and I'm glad that I could spend a fraction of that time with you.</p>
         </div>
     </div>
 
@@ -28,43 +32,332 @@
     </div>
 
     <div class="container">
-        <button class="button"><a href="#validation">need validation 🥺</a></button>
-        <button class="button"><a href="#happy">happy</a></button>
-        <button class="button"><a href="#sad">sad</a></button>
-        <button class="button"><a href="#stressed">stressed</a></button>
-        <button class="button"><a href="#tired">tired</a></button>
-        <button class="button"><a href="#question">???</a></button>
+        <a class="feelingLinks" href="#validation">need validation 🥺</a>
+        <a class="feelingLinks" href="#happy">happy 😁</a>
+        <a class="feelingLinks" href="#sad">sad ☹️</a>
+        <a class="feelingLinks" href="#down bad">down bad 🥹</a>
+        <a class="feelingLinks" href="#bored">bored</a>
+        <a class="feelingLinks" href="#question">???</a>
     </div>
 
-    <div id="validation" class="mood">
+    <div class="gifs" style="text-align: center;">
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExYXA5ankxaWNyaTQ0MWVwcGpzcnRobGs0OXd4N3h3Nm4xaWR3MzZlYyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/PkHbMg4d0yZ7a/giphy.gif" height="320px" style="padding: 10px;"/>
+        <img src="https://media1.tenor.com/m/eQyxp-qcrqYAAAAd/moomin-heart.gif" height="320px" style="padding: 10px;" />
+        <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExaHNsdHgzMXJxdXM4eTVmMDd3ODZwN2hoNHpjMzh1aHZrODB6bDc1aiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/HgycnYQCMeJXO/giphy.gif" height="320px" style="padding: 10px;"/>
+        <p style="margin-top: -2px; margin-bottom: -3px;"><i>figure 1. gallery of moomins</i></p>
+    </div>
+
+    <div id="validation" class="mood" style="margin-top: 5%;">
         <h2>need validation? 🥺🥺</h2>
-        <p>for your eyes only!! 🙈🙈</p>
+        <p>40 awesome things about you:</p>
+        <ol id="fortyThings">
+            <li>ur so incredibly thoughtful, whether it be while giving a cutie gift (e.g. collage ahh) or framing a yap in a kind/relatable way (e.g. inserting a sports analogy) or helping out kids w their apps (e.g. hehe rohan garg co-parenting) in a way that’s efficient and doesn't eat up your own time yet also super constructive</li>
+            <li>ur a yapper at heart where you’ll yap abt life and thoughts swirling in your deep beautiful mind yet also be conscious and understanding of how others are receiving the yap</li>
+            <li>u enjoy moomins. u send moomin gifs. moomins make life a little bit better</li>
+            <li>ur hot, need i say more? (I will be saying more in future bullet points lol)</li>
+            <li>ur a major food connoisseur who smiles heartily at oysters and oozes tomikawa restaurant passion. pro food critic who only accepts the very best</li>
+            <li>ur a reliable and unbelievably accurate (college) applications guru. for example, u keep an rsi spreadsheet of acceptances like the dedication and organization there is soo amazing. or just casually knowing x person at mit or y program at penn or pulling up z document about former rickoids' college experiences. ur incredibly knowledgeable and (at least with me lol) willing to share and there's a reason why many people come to you to talk about and get help with apps</li>
+            <li>ur a great reader of emotions. u recognize people’s feelings very well and aren't afraid to address it. lowkey very attractive 😭</li>
+            <li>u love the little things in life very passionately. e.g. blankie might steal some of my love but that's okay because u loving blankie shows character depth and emotional color and it's also just cute and it makes me like you more lol</li>
+            <li>ur emotionally profound and beautiful. roller coasters are fun because of the suspense going up and the thrill going down</li>
+            <li>u know when and how to say “thank you” and when to say "sorry" which is a hard thing to do... both in terms of like tone and timing but also i think it moreover shows ur ability to gauge social situations well which is admirable af (especially for a smart girl that was adMITted)</li>
+            <li>u have lots of stuffed animals and dedicate time and emotion with each one... that's adorable 🥹. i like the cat-panda and ik you do too.</li>
+            <li>ur fits hiiiit. I am lucky to have seen the melody wardrobe because it is full of goodies that she splendidly puts on.</li>
+            <li>ur super sexy especially when u put on revealing tops or fancy dresses haha</li>
+            <li>ur cracked like craaacked and a lot of people look up to you in that regard</li>
+            <li>u have fascinating tea drops and guess what unlike a certain forgetful person who frequenly cannot remember details, you deliver on point like every time</li>
+            <li>ur the ultimate wingwoman bc ur careful and calculated in your steps + u have all the connections + u always get the job done = professional couples matcher</li>
+            <li>u have a great extensive makeup collection. and u use that makeup collection super well ur skin fuckin gleeaaams. pretty makeup for a pretty girl</li>
+            <li>u embody the color pink and not only is that memorable like "oh yeah melody is the girl who likes pink" but it's also super cute because pink is an inherently cute color and the fact that the things you have are very much pink-themed is aesthetic af</li>
+            <li>ur good at tetris and even tho ur on a tetris hiatus the fact that u enjoy tetris is so cool and a</li>
+            <li>ur a d1 sidequester and there's always some random other interesting completely curveball thing that u've done before. it makes talking to u really fun and also very asian kid core lol /hj</li>
+            <li>ur the perfect height to hug in a 6-foot guy's arms... ur also the perfect height to look up cutely at that 6-foot guy's eyes...</li>
+            <li>u have great music taste ik one of ur friends said that it's boring but ur playlists have certified bangers that r not boring</li>
+            <li>u have tried listening to classical music... that's cute and thoughtful 🥺</li>
+            <li>u being a generational movie/show watcher is really attractive and u having a letterbox'd to yap abt them (on top of w ur friends) is so cool. also ur recs always hit (or at least ur 2/2 so far). definitely up with the pop culture up with the latest releases which is very admirable (especially for haha cs kid!!). also the good place is a W sitcom to have as ur fav</li>
+            <li>ur hair is nice and lush and smooth to run my hands through. plus when it's down and in front of your shoulders it's sooooo hot and when it's back like normal it's cute and clean</li>
+            <li>u leave voice memos... voice memos are genius... and each voice memo is unique and cute whether it's u meowing for 40 seconds (lol 😭) or a 20-minute yap sesh or outside melody voice leaving a brief day recap as she walks to lunch with her friends or a 2am voice memo that's hot and that's all i'm going to say because this website is (mostly) PG 🤭</li>
+            <li>ur sooo good at essay editing it's scary and ur not one of those "haha this is good!!" even tho it sucks but ur also not like "this essay is shit" and don't give any comments (at least to the people u care about which is all that's important lol) and ur comments r super constructive like the admissions officer perspective type shit</li>
+            <li>ur incredibly loving and sometimes ur boyfriend will wake up surprised and heartwarmed to see an appreciate series of texts or voice memos type of thing and ur heart is deep and kind and pink and cute</li>
+            <li>u care about graphic design and fonts and the little things for presentations/posters (jason <s>copied</s> took inspiration from u with the transitions for his rsi presentation)... not to mention that ur really really good with it</li>
+            <li>ur a great teacher (project starcoder 1k subs woo) but also on a more personal level explaining prefix sums to a non-cs kid or makeup to a makeup-less guy and u give off the "i'm smart and can explain things clearly and very well but only to those who treat me well in return" which is honestly super admirable and dare i say, hot???</li>
+            <li>ur secretly (maybe not so "secret"?) an amazing artist like dayum those lessons as a kid stuck thru the years because it's one of those subtle yet super dope qualities that someone can have and u use it for great purpose whether it's making an absolutely adorable piece for bunny and bison or drawing the layout of jason's house in a cute and quick yet surprisingly well-drawn way. or even for designing hay day farms</li>
+            <li>ur a lefty and idk why but that's hot...</li>
+            <li>ur intelligent and so very smart and ik u often don't believe this urself especially when ur comparing to other super cracked kids but the questions u ask when receiving help from jasonGPT and ur step-by-step explanations and ur tact while giving presentations and ur many many github repos pay a testament to this. and ur very resilient academically too which brings the level up even more</li>
+            <li>u sometimes get backed up and have a million things on ur plate but ur able to pull through and lock in. this might not be the most healthiest trait when it brings u down to the trenches but it's also really admirable that ur able to push forward and get back up</li>
+            <li>ur a big cat lover and dog lover and that's adorable especially how there are certain pets u absolutely feen for (e.g. charlie lol)</li>
+            <li>u have an absolutely beautiful face shape, soft and pretty, and when u smile radiantly it's stunning</li>
+            <li>ur a professional food photographer</li>
+            <li>ur flexible and when i first saw u doing the splits at rsi it surprised my ass and my heart skipped a beat. first off it's a really attractive quality and party trick type thing too and incredibly sexy... plus it's another artifact of the melody side quests which I find to be cute</li>
+            <li>u have the most funny peppy little talks and random yaps and tangents that r so fun to listen to. and at the same time, u have much deeper talks about people and schools and relationships and even the occasional philosophical debate. it makes conversing with you easy and enjoyable and sometimes u never know what's coming up hehe</li>
+            <li>ur big on looking into the future which is a super admirable quality. whether it be about raising the ranks in a career bouncing thru the faang companies. or pondering the future of relationships, or maybe what you'll look like in 40 years and whether your boyfriend would still love you. it shows emotional depth and maturity of your thoughts and can get serious at times but it's also super cute</li>
+            <li>u enjoy the like online quizzes whether it be personality type mbti or love language or rice purity or the 50 states quiz and u encourage ppl (ppl being me) to do them and it's always fun to do especially with you cuz ur both super piped up but also knowledgeable and cool about them (except maybe the 50 states one not so knowledgable in the past maybe now ur better tho lol) and yea it's just fun exciting vibes</li>
+            <li>u curate the things close to you which is really adorable and shows soo much personality. whether it be ur room or your computer stickers. or ur insta feed (i have learned from melody that post order super duper matters) or ur spotify playlists (side tangent abt spotify making ur pfp the kitty is still so cute holy shit) and u make them aesthetic af every time too</li>
+        </ol>
+    oops i went a little bit over oopsies!!!!
     </div>
     
     <div id="happy" class="mood">
         <h2>happy?</h2>
         <p>YAY!!! YAY!!! YAY!!!</p>
         <p>some things to help u <i>~ride the stride~</i> are:</p>
+        <p><b>happy playlist?!</b></p>
+        <p>enjoy this playlist of some upbeat energetic songs!! genres r fairly mixed but hope u enjoy nonetheless: <a href="https://open.spotify.com/playlist/575YYcbCcGk5zqDX0KgZkZ?si=0f7de0a2fd574ca1&pt=5cff1c3208e0643f0a5c2c1d673fb918">❤️🎵</a></p>
+        <p><b>spinning cat</b></p>
+        <p>enough said. <a href="https://spinning.cat/">enjoy this spinning cat.</a></p>
+        <p><b>red rose</b></p>
+        <p>yayayay take this red (paper) rose</p>
     </div>
     
     <div id="sad" class="mood">
         <h2>sad?</h2>
-        <p>It’s okay, we’ve all been there. Maybe drink some water, go for a walk, or hit the gym.</p>
+        <p>i'm sorry to hear that. i'm always here to talk and i hope things go better soon 🙏🙏</p>
+        <p>i wanted to dedicate to u my piano cover of d4vd here with me. hope it makes u feel a little bit better</p>
+        <iframe width="420" height="315"
+        src="https://www.youtube.com/embed/3BMxKZNmI-Q">
+        </iframe>
     </div>
 
-    <div id="stressed" class="mood">
-        <h2>stressed?</h2>
-        <p>Big question. No easy answer. But maybe start by enjoying the little things.</p>
+    <div id="down bad" class="mood">
+        <h2>down bad?</h2>
+        <p>u cutie 🥺 here r some date ideas:</p>
+        <p><b>boston area full-day date</b></p>
+        <ul style="line-height: 1.1;">
+            <li>take you in the passenger seat of my car, holding hands as I navigate through the city
+                <ul>
+                    <li>a nice compact Mercedes or BMW or top-off sports car</li>
+                    <li>heated seats? hehe</li>
+                    <li>happy playlist softly in the background as we yap and I squeeze your left hand with my right at every laugh</li>
+                </ul>
+            </li>
+            <li>sit-down at Giulia Italian restaurant in Cambridge</li>
+            <ul>
+                <li>I'll have reserved a table for two and request a cozy and slightly dimly-lit part of the restaurant</li>
+                <li>order food, maybe exchange a small gift (chocolates/flowers—something cute and small)</li>
+                <li>look into your eyes as we chat and wait and you jokingly kick my leg</li>
+                <li>food comes! Snap pictures of food (Melody is good at this) and snap pictures of us on a digi-cam</li>
+            </ul>
+            <li>hold hands and walk to Mike’s Pastry in Harvard Square</li>
+            <ul>
+                <li>share a tiramisu and feed each other with our forks</li>
+                <li>buy you a few cannolis to enjoy for later</li>
+            </ul>
+            <li>bike down Mass Ave to the Charles River Esplanade and have a picnic</li>
+            <ul>
+                <li>snuggle in the sun and gaze at the clouds as I yap about them</li>
+                <li>play Catan and cards and eventually devolve into random yaps and stories</li>
+                <li>look through and reminisce over your camera roll</li>
+                <li>hug side-by-side and dangle our feet just off the river’s edge</li>
+            </ul>
+            <li>bike back along the river side-by-side to Pyara Spa and Salon</li>
+            <ul>
+                <li>get a relieving massage next to each other</li>
+                <li>bask in the sauna for a bit</li>
+                <li>I’ll massage your back and feet some more in the relaxation room</li>
+            </ul>
+            <li>dinner at gyu-kaku japanese bbq</li>
+            <ul>
+                <li>I’ll be grilling the meats and putting them on your plate for you to enjoy</li>
+                <li>more pics, of course</li>
+                <li>share some tangy mochi balls for dessert</li>
+            </ul>
+            <li>drive you back home and carry you over into my lap once we’re back</li>
+            <ul>
+                <li>hug and yap and cuddle fervently</li>
+                <li>embrace the loving cutie in my arms</li>
+            </ul>
+        </ul>
+
+        <p><b>dc area afternoon/evening</b></p>
+        <ul style="line-height: 1.1;">
+            <li>shop at citycenterdc
+                <ul>
+                    <li>designer brands (chanel, louis vuitton) and fast fashion alike</li>
+                    <li>watch u try on each fit until u find one that especially gleams</li>
+                    <li>hit up some brands that we both buy from and let u take me around</li>
+                    <li>i’ll subtly carry the bags lol</li>
+                    <li>buy some tea or a cute ice cream sundae along the way</li>
+                </ul>
+            </li>
+            <li>take the potomac river ferry to tyson’s corner
+                <ul>
+                    <li>cuddle lightly as the wind blows gently in ur hair</li>
+                    <li>admire the monuments and the sparkly water and yap about life</li>
+                </ul>
+            </li>
+            <li>shopping spree… part 2! at tyson’s corner center
+                <ul>
+                    <li>hit up dresses for the personalized sexy model show later that night</li>
+                    <li>zara? dior? all on the table hehe</li>
+                    <li>try some heels and give me a kiss for each one and see how each height feels</li>
+                </ul>
+            </li>
+            <li>dinner at han gang korean restaurant in annandale
+                <ul>
+                    <li>try soondubu (tofu stew) and naengmyeon (korean cold noodles)</li>
+                    <li>cook up some samgyeopsal and get u into the kbbq hype</li>
+                    <li>have a little milk bottle on hand in case stuff is too spicy for cutie</li>
+                </ul>
+            </li>
+            <li>dessert at tous les jours
+                <ul>
+                    <li>walk over to the bakery while watching the sun set between the buildings of the highway</li>
+                    <li>share a sweet icy fruit bingsu with big rice cake chunks</li>
+                    <li>fill up a basket full of breads and pastries</li>
+                    <li>order a full red velvet cake</li>
+                </ul>
+            </li>
+            <li>come home and watch ur beautiful model show
+                <ul>
+                    <li>try on new clothes and dress and i’ll give ratings from on the 0 to 10 scale (i already know they’re gonna be anywhere from 10 to infinity)</li>
+                    <li>after every fit i’ll give u a big bite of red velvet cake</li>
+                    <li>u try them all on and walk cute and sexy and i’ll pick up my bundle of love and toss u onto the bed and cuddle thru the night</li>
+                </ul>
+            </li>
+        </ul>
     </div>
     
-    <div id="tired" class="mood">
-        <h2>tired?</h2>
-        <p>Rest up, king/queen. Sleep is fuel. Don’t forget to recharge.</p>
+    <div id="bored" class="mood">
+        <h2>bored?</h2>
+        <p>ur welcome to take the jason quiz!!</p>
+        <div class="quiz-container">
+
+            <form id="quizForm">
+                <ol>
+                    <li>what is jason's favorite hex code?
+                        <input type="text" id="q1" placeholder="answer?">
+                    </li>
+                    <li>name jason's late junior year guilty pleasure artist.
+                        <input type="text" id="q2" placeholder="answer?">
+                    </li>
+                    <li>how old was jason when he started playing cello?
+                        <input type="text" id="q3" placeholder="answer?">
+                    </li>
+                    <li>what is jason's rp score (as of when melody receives this hehe)?
+                        <input type="text" id="q4" placeholder="answer?">
+                    </li>
+                    <li>what is jason's favorite brand of pen?
+                        <input type="text" id="q5" placeholder="answer?">
+                    </li>
+                    <li><a href="https://www.youtube.com/watch?v=kKTkM9LADe8">skibidi toilet or creeper?</a> (melody i am so sorry for this)
+                        <input type="text" id="q6" placeholder="answer?">
+                    </li>
+                    <li>what is jason's fastest monkeytype 10 words? (round to the nearest 10 wpm)
+                        <input type="text" id="q7" placeholder="answer?">
+                    </li>
+                    <li>what's the name of the guy that jason opps?
+                        <input type="text" id="q8" placeholder="answer?">
+                    </li>
+                    <li>order jason's preferences: 1. kfc, 2. popeyes, 3. chick-fil-a. (e.g. 312).
+                        <input type="text" id="q9" placeholder="answer?">
+                    </li>
+                    <li>name jason's 5th award/accomplishment item that he wrote for the common app. (e.g. isef 3rd place, just write "isef")
+                        <input type="text" id="q10" placeholder="answer?">
+                    </li>
+                    <li>which of the following is jason most scared about in life? losing passion, being alone, not living up to standards.
+                        <input type="text" id="q11" placeholder="answer?">
+                    </li>
+                    <li>who is jason's favorite cutie?
+                        <input type="text" id="q12" placeholder="answer?">
+                    </li>
+                    <li>what is jason's strongest love language?
+                        <input type="text" id="q13" placeholder="answer?">
+                    </li>
+                    <li>how many kills did jason have in rsi assassin?
+                        <input type="text" id="q14" placeholder="answer?">
+                    </li>
+                    <li>on what date did jason tell bowen yang that jason was crushing on melody? (answer month day, e.g. september 24)
+                        <input type="text" id="q15" placeholder="answer?">
+                    </li>
+                    <li>order jason's preferences: 1. c++ 2. python 3. java 4. c#.
+                        <input type="text" id="q16" placeholder="answer?">
+                    </li>
+                    <li>order jason's preferences (assume all of them are really high quality): 1. sausage 2. bacon 3. ham 4. chicken.
+                        <input type="text" id="q17" placeholder="answer?">
+                    </li>
+                    <li>how many bones has jason broken before?
+                        <input type="text" id="q18" placeholder="answer?">
+                    </li>
+                    <li>which eminem album does jason vibe with the most?
+                        <input type="text" id="q19" placeholder="answer?">
+                    </li>
+                    <li>which mahler symphony does jason vibe with the most? (answer a number)
+                        <input type="text" id="q20" placeholder="answer?">
+                    </li>
+                    <li>who was jason's most listened artist in 2023?
+                        <input type="text" id="q21" placeholder="answer?">
+                    </li>
+                    <li>in what game does jason claim that he's better than melody but in reality, he knows he's not but he won't admit it?
+                        <input type="text" id="q22" placeholder="answer?">
+                    </li>
+                    <li>who does jason think is the nba goat? (hint: Look at the number of questions in this quiz.)
+                        <input type="text" id="q23" placeholder="answer?">
+                    </li>
+                </ol>
+                <button type="button" class="button" onclick="checkAnswers()">Submit</button>
+            </form>
+    
+            <div class="result" id="result"></div>
+        </div>
+
+        <p class="toggle-text" onclick="toggleAnswers()"><b>answer key</b></p>
+        <div id="answers" class="answer-list">
+            <ol style="line-height: 1.1;">
+                <li>50c878</li>
+                <li>laufey</li>
+                <li>9</li>
+                <li>81</li>
+                <li>g2</li>
+                <li>creeper</li>
+                <li>210</li>
+                <li>david</li>
+                <li>321</li>
+                <li>aime</li>
+                <li>being alone</li>
+                <li>melody</li>
+                <li>quality time</li>
+                <li>4</li>
+                <li>august 1</li>
+                <li>2314</li>
+                <li>1432</li>
+                <li>0</li>
+                <li>the eminem show</li>
+                <li>1</li>
+                <li>taylor swift</li>
+                <li>word hunt</li>
+                <li>michael jordan</li>
+            </ol>
+        </div>
     </div>
 
     <div id="question" class="mood">
         <h2>???</h2>
-        <p>Rest up, king/queen. Sleep is fuel. Don’t forget to recharge.</p>
+        <p>this is the place for other emotions. or for other random things that jason wanted to share. enjoy!!</p>
+        <p><b>horny?</b></p>
+        <p>no, i'm NOT sharing on a public website lol. take this link instead hehe: <a href="#https://docs.google.com/document/d/1qAmDCSycSsNP_QNwmFQdlORcUQQwIPZmQ8uLQoCaYkU/edit?tab=t.0">for melody's eyes only 🙈</a></p>
+        <p><b>want to hear a yap?</b></p>
+        <p>here u go!</p>
+        <div style="line-height: 1.1;">
+            <p>hello so today I will be talking to you more about the wizards.</p>
+            <p>basically we have won 7 out of the 15 games which is very very good for a team that used to win 15% of their games. and it’s all due to the rookies ok there r a few names</p>
+            <p>bilal coulibaly ok this guy is the guy that i have mentioned before because hopefully he will be the front face of our team in the future holy shit he had this crazy dunk last game let me find it ok it’s here</p>
+            <iframe width="420" height="315"
+            src="https://youtube.com/embed/UJV9TuHRgUs">
+            </iframe>
+            <p>but there’s that guy and then this year we picked up three more people their names are alex sarr (he’s french) bub carrington (guess what he’s from maryland) and kyshawn george (he has a crazy afro lol). they r all decently good but they’ve gotten so much better from the beginning of season when we were like 5 wins 35 losses or some embarrassing shit and now we r 13 wins 48 losses which is better!!!</p>
+            <p>wizards r kindof the laughingstock of the nba rn which is sad. all the teams that ppl like r the popular ones like the lakers or the warriors or the celtics (ryan razon is a fan of the celtics and they are in boston so plan is to hit up games maybe during uni but also since the celtics r good the tix are expensive af like $200 for seats where u can barely see the ball cuz they so far away from the court ok anyway)</p>
+            <p>wizards win makes me so happy it is one of thee most happiest things that can happen in jason’s life</p>
+            <p>i read somewhere that women don’t like when men talk ab sports and that might be true so this yap might be boring but jason likes it so jason will yap ab it and melody can read or not read if she wishes</p>
+            <p>we (i refer to the wizards as we and it's really cute how u've picked up on that lol) had our glory days in 2016-17 so like fourth fifth grade when basically john wall (the super cracked dude he’s not on the team anymore now) was goated and also this guy named bradley beal (if john wall is melody crackedness then bradley beal is like jason crackedness is a good skill comparison) helped lead the team to 4th place out of 15 teams in the eastern conference which is pretty damn good. And then we went to the playoffs and we won the first round and then we were one game away from winning the second round against the celtics. Each playoff round is 7 games and game 6 was the best game to watch in my life so i return to this youtube video at least once every few months just to reminisce</p>
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/HkxrJmFJKfI">
+            </iframe>
+            <p>so basically the wizards r a part of my soul and even though we’re ass and nothing like before i still like them so so much if there are 1000 wizards fans i’m one of them if there are 10 wizards fans i’m one of them if there are 1 i’m that fan if there r 0 i’m dead ok byebye</p>
+        </div>
+        <p><b>or perhaps a video yap? crazy ik</b></p>
+        <iframe width="420" height="315"
+        src="https://youtube.com/embed/wVkal0LJPQA">
+        </iframe>
     </div>
 
 
