@@ -13,6 +13,7 @@ body {
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    color: black;
     padding-top: 130px;
     height: 100vh;
     margin: 0;
@@ -38,35 +39,19 @@ body {
     padding: 15px;
     border-radius: 15px;
 }
-
-.button {
-    background: #f58ca8;
-    border: none;
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 15px;
-    cursor: pointer;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.button:hover {
-    transform: scale(1.1);
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-}
 .topBar {
     position: absolute;
     top: 15px;
     padding: 10px;
     text-align: right;
-    border: 3px solid black;
+    border: 5px solid purple;
     border-radius: 20px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 95%;
+    width: 80%;
     gap: 10px;
-    background-color: #bc808f;
+    background-color: #fdc9da;
 }
 .toggle-btn {
     padding: 2px;
@@ -105,7 +90,6 @@ footer a:hover{
 
 .mood {
     width: 80%;
-    height: 80%;
     padding: 10px;
     margin: 25px auto;
     border: 5px solid purple;
@@ -119,9 +103,22 @@ footer a:hover{
     color: #2695d0;
 }
 
-a {
+.feelingLinks {
     text-decoration: none;
+    display: block;
     color: inherit;
+    background: #f58ca8;
+    border: none;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.feelingLinks:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .popup {
@@ -153,4 +150,67 @@ a {
     right: 15px;
     font-size: 24px;
     cursor: pointer;
+}
+
+#fortyThings {
+    line-height: 1.1;
+}
+
+.side {
+    position: fixed;
+    top: 0;
+    width: 50px; /* Adjust the width as needed */
+    height: 100vh;
+    background-color: #fdc9da;
+    padding: 10px 10px;
+}
+
+.Left {
+    left: 0;
+    border-right: 5px solid purple;
+}
+
+.Right {
+    right: 0;
+    border-left: 5px solid purple;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 4px;
+}
+
+.quiz-container {
+    padding: 20px;
+    margin-top: -15px;
+    width: 80%;
+}
+
+.answer-list {
+    display: none;
+    margin-top: 10px;
+}
+.toggle-text {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.gifs{
+    margin-top: 20px;
+    padding: 20px;
+    border: 5px solid purple;
+    border-radius: 15px;
+    background-color: #fdc9da;
 }
