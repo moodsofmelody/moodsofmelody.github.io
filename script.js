@@ -29,45 +29,43 @@ document.getElementById("closePopup").addEventListener("click", function() {
     document.getElementById("popup").style.display = "none";
 });
 
+function checkJason() {
+    const correctAnswers = [
+        "50c878", "laufey", "12", "81", "g2", "creeper", "210", "david", "321", "aime",
+        "being alone", "melody", "quality time", "4", "august 1", "2314", "1432", "0",
+        "positions", "2", "taylor swift", "word hunt", "michael jordan"
+    ];
 
-function checkAnswers() {
     let score = 0;
-    const answers = {
-        q1: "50c878",
-        q2: "laufey",
-        q3: "9",
-        q4: "81",
-        q5: "g2",
-        q6: "creeper",
-        q7: "210",
-        q8: "david",
-        q9: "321",
-        q10: "aime",
-        q11: "being alone",
-        q12: "melody",
-        q13: "quality time",
-        q14: "4",
-        q15: "august 1",
-        q16: "2314",
-        q17: "1432",
-        q18: "0",
-        q19: "the eminem show",
-        q20: "1",
-        q21: "taylor swift",
-        q22: "word hunt",
-        q23: "michael jordan"
-    };
-
-    for (let i = 1; i <= 23; i++) {
-        const userAnswer = document.getElementById('q' + i).value.trim().toLowerCase();
-        const correctAnswer = answers['q' + i].toLowerCase();
-        if (userAnswer === correctAnswer) {
+    
+    for (let i = 0; i < correctAnswers.length; i++) {
+        const userInput = document.getElementById(`q${i + 1}a`).value.trim().toLowerCase();
+        if (userInput === correctAnswers[i]) {
             score++;
         }
     }
 
-    document.getElementById('result').innerHTML = `yay u scored ${score} out of 23!`;
-    document.getElementById('result').style.display = 'block';
+    document.getElementById("result").innerText = `you got ${score} out of ${correctAnswers.length} correct for jason's favs!`;
+}
+
+
+function checkAnswers() {
+    const correctAnswers = [
+        "50c878", "laufey", "12", "81", "g2", "creeper", "210", "david", "321", "aime",
+        "being alone", "melody", "quality time", "4", "august 1", "2314", "1432", "0",
+        "positions", "2", "taylor swift", "word hunt", "michael jordan"
+    ];
+
+    let score = 0;
+    
+    for (let i = 0; i < correctAnswers.length; i++) {
+        const userInput = document.getElementById(`q${i + 1}b`).value.trim().toLowerCase();
+        if (userInput === correctAnswers[i]) {
+            score++;
+        }
+    }
+
+    document.getElementById("result").innerText = `you and jason match ${score} out of ${correctAnswers.length}!`;
 }
 
 function toggleAnswers() {
